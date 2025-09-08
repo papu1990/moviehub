@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="full-hd-movies.css">
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop id="video-bg">
+            <source src="Marvel Comics Intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container">
+        <!-- Sign Up Card -->
+        <div class="card signup-card">
+            <div class="card-content">
+                <h2>Sign Up</h2>
+                <form id="signup-form">
+                    <div class="input-box">
+                        <input type="text" id="username" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+                <div class="signup-rules">
+                    <h4>Rules for Signing Up:</h4>
+                    <p>Use your reference number followed by @subscription, e.g., 12345@subscription.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Image Card -->
+        <div class="card image-card">
+            <div class="card-content">
+                <h2 class="subscription-header">&#8369;ISO UNLIMITED ACCESS</h2>
+                <img src="QR-IMAGE/DAILY.png" alt="Subscription QR Code" class="qr-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Pop-up Message -->
+    <div id="message-box" class="message-box">
+        <p id="message-text"></p>
+    </div>
+
+    <script src="full-hd-movies.js"></script>
+</body>
+</html>
